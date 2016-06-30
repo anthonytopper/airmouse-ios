@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		921B17F21C49A89C00B62994 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B17F11C49A89C00B62994 /* main.m */; };
+		921B17F51C49A89C00B62994 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B17F41C49A89C00B62994 /* AppDelegate.m */; };
+		921B17F81C49A89C00B62994 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B17F71C49A89C00B62994 /* ViewController.m */; };
+		921B17FB1C49A89C00B62994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921B17F91C49A89C00B62994 /* Main.storyboard */; };
+		921B17FD1C49A89C00B62994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921B17FC1C49A89C00B62994 /* Assets.xcassets */; };
+		921B18001C49A89C00B62994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921B17FE1C49A89C00B62994 /* LaunchScreen.storyboard */; };
+		921B18251C49A8CF00B62994 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921B18231C49A8CF00B62994 /* CoreBluetooth.framework */; };
+		921B18261C49A8CF00B62994 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921B18241C49A8CF00B62994 /* CoreMotion.framework */; };
+		921B18281C49A9C700B62994 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921B18271C49A9C700B62994 /* CoreLocation.framework */; };
+		921B182B1C49B54F00B62994 /* Quaternion.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B182A1C49B54F00B62994 /* Quaternion.m */; };
+		921B182E1C49DFD300B62994 /* BTManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B182D1C49DFD300B62994 /* BTManager.m */; };
+		921B18711C4AA89400B62994 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921B18701C4AA89400B62994 /* GameKit.framework */; };
+		921B18731C4AA94500B62994 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921B18721C4AA94500B62994 /* MultipeerConnectivity.framework */; };
+		92F31AC01C83A7BD00B9AB0B /* VTPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F31ABF1C83A7BD00B9AB0B /* VTPostRequest.m */; };
+		B6DC74991C8352FB0001BF0A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74951C8352FB0001BF0A /* background.png */; };
+		B6DC749A1C8352FB0001BF0A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74951C8352FB0001BF0A /* background.png */; };
+		B6DC749B1C8352FB0001BF0A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74951C8352FB0001BF0A /* background.png */; };
+		B6DC749C1C8352FB0001BF0A /* calibrate-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74961C8352FB0001BF0A /* calibrate-button.png */; };
+		B6DC749D1C8352FB0001BF0A /* calibrate-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74961C8352FB0001BF0A /* calibrate-button.png */; };
+		B6DC749E1C8352FB0001BF0A /* calibrate-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74961C8352FB0001BF0A /* calibrate-button.png */; };
+		B6DC74A21C8352FB0001BF0A /* share-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74981C8352FB0001BF0A /* share-button.png */; };
+		B6DC74A31C8352FB0001BF0A /* share-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74981C8352FB0001BF0A /* share-button.png */; };
+		B6DC74A41C8352FB0001BF0A /* share-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74981C8352FB0001BF0A /* share-button.png */; };
+		B6DC74A81C83550E0001BF0A /* mouse-left.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A51C83550E0001BF0A /* mouse-left.png */; };
+		B6DC74A91C83550E0001BF0A /* mouse-left.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A51C83550E0001BF0A /* mouse-left.png */; };
+		B6DC74AA1C83550E0001BF0A /* mouse-left.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A51C83550E0001BF0A /* mouse-left.png */; };
+		B6DC74AB1C83550E0001BF0A /* mouse-right.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A61C83550E0001BF0A /* mouse-right.png */; };
+		B6DC74AC1C83550E0001BF0A /* mouse-right.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A61C83550E0001BF0A /* mouse-right.png */; };
+		B6DC74AD1C83550E0001BF0A /* mouse-right.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A61C83550E0001BF0A /* mouse-right.png */; };
+		B6DC74AE1C83550E0001BF0A /* mouse-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A71C83550E0001BF0A /* mouse-white.png */; };
+		B6DC74AF1C83550E0001BF0A /* mouse-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A71C83550E0001BF0A /* mouse-white.png */; };
+		B6DC74B01C83550E0001BF0A /* mouse-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74A71C83550E0001BF0A /* mouse-white.png */; };
+		B6DC74B21C8379760001BF0A /* release-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74B11C8379760001BF0A /* release-button.png */; };
+		B6DC74B31C8379760001BF0A /* release-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74B11C8379760001BF0A /* release-button.png */; };
+		B6DC74B41C8379760001BF0A /* release-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DC74B11C8379760001BF0A /* release-button.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		921B18071C49A89C00B62994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 921B17E51C49A89C00B62994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 921B17EC1C49A89C00B62994;
+			remoteInfo = Airmouse;
+		};
+		921B18121C49A89C00B62994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 921B17E51C49A89C00B62994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 921B17EC1C49A89C00B62994;
+			remoteInfo = Airmouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		921B17ED1C49A89C00B62994 /* AirmouseiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirmouseiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		921B17F11C49A89C00B62994 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		921B17F31C49A89C00B62994 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		921B17F41C49A89C00B62994 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		921B17F61C49A89C00B62994 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		921B17F71C49A89C00B62994 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		921B17FA1C49A89C00B62994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		921B17FC1C49A89C00B62994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		921B17FF1C49A89C00B62994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		921B18011C49A89C00B62994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921B18061C49A89C00B62994 /* AirmouseiOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirmouseiOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		921B18111C49A89C00B62994 /* AirmouseiOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirmouseiOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		921B18231C49A8CF00B62994 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		921B18241C49A8CF00B62994 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		921B18271C49A9C700B62994 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		921B18291C49B54F00B62994 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		921B182A1C49B54F00B62994 /* Quaternion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quaternion.m; sourceTree = "<group>"; };
+		921B182C1C49DFD300B62994 /* BTManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTManager.h; sourceTree = "<group>"; };
+		921B182D1C49DFD300B62994 /* BTManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTManager.m; sourceTree = "<group>"; };
+		921B18701C4AA89400B62994 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		921B18721C4AA94500B62994 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		92F31ABE1C83A7BD00B9AB0B /* VTPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPostRequest.h; sourceTree = "<group>"; };
+		92F31ABF1C83A7BD00B9AB0B /* VTPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPostRequest.m; sourceTree = "<group>"; };
+		B6DC74951C8352FB0001BF0A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B6DC74961C8352FB0001BF0A /* calibrate-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibrate-button.png"; sourceTree = "<group>"; };
+		B6DC74981C8352FB0001BF0A /* share-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-button.png"; sourceTree = "<group>"; };
+		B6DC74A51C83550E0001BF0A /* mouse-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mouse-left.png"; sourceTree = "<group>"; };
+		B6DC74A61C83550E0001BF0A /* mouse-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mouse-right.png"; sourceTree = "<group>"; };
+		B6DC74A71C83550E0001BF0A /* mouse-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mouse-white.png"; sourceTree = "<group>"; };
+		B6DC74B11C8379760001BF0A /* release-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "release-button.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		921B17EA1C49A89C00B62994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921B18731C4AA94500B62994 /* MultipeerConnectivity.framework in Frameworks */,
+				921B18711C4AA89400B62994 /* GameKit.framework in Frameworks */,
+				921B18281C49A9C700B62994 /* CoreLocation.framework in Frameworks */,
+				921B18251C49A8CF00B62994 /* CoreBluetooth.framework in Frameworks */,
+				921B18261C49A8CF00B62994 /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B18031C49A89C00B62994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B180E1C49A89C00B62994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		921B17E41C49A89C00B62994 = {
+			isa = PBXGroup;
+			children = (
+				921B18721C4AA94500B62994 /* MultipeerConnectivity.framework */,
+				921B18701C4AA89400B62994 /* GameKit.framework */,
+				921B18271C49A9C700B62994 /* CoreLocation.framework */,
+				921B18231C49A8CF00B62994 /* CoreBluetooth.framework */,
+				921B18241C49A8CF00B62994 /* CoreMotion.framework */,
+				921B17EF1C49A89C00B62994 /* Airmouse */,
+				921B17EE1C49A89C00B62994 /* Products */,
+				B6DC74951C8352FB0001BF0A /* background.png */,
+				B6DC74961C8352FB0001BF0A /* calibrate-button.png */,
+				B6DC74981C8352FB0001BF0A /* share-button.png */,
+				B6DC74A51C83550E0001BF0A /* mouse-left.png */,
+				B6DC74A61C83550E0001BF0A /* mouse-right.png */,
+				B6DC74A71C83550E0001BF0A /* mouse-white.png */,
+				B6DC74B11C8379760001BF0A /* release-button.png */,
+			);
+			sourceTree = "<group>";
+		};
+		921B17EE1C49A89C00B62994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				921B17ED1C49A89C00B62994 /* AirmouseiOS.app */,
+				921B18061C49A89C00B62994 /* AirmouseiOS.xctest */,
+				921B18111C49A89C00B62994 /* AirmouseiOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		921B17EF1C49A89C00B62994 /* Airmouse */ = {
+			isa = PBXGroup;
+			children = (
+				921B17F31C49A89C00B62994 /* AppDelegate.h */,
+				921B17F41C49A89C00B62994 /* AppDelegate.m */,
+				921B17F61C49A89C00B62994 /* ViewController.h */,
+				921B17F71C49A89C00B62994 /* ViewController.m */,
+				921B182C1C49DFD300B62994 /* BTManager.h */,
+				921B182D1C49DFD300B62994 /* BTManager.m */,
+				921B18291C49B54F00B62994 /* Quaternion.h */,
+				921B182A1C49B54F00B62994 /* Quaternion.m */,
+				92F31ABE1C83A7BD00B9AB0B /* VTPostRequest.h */,
+				92F31ABF1C83A7BD00B9AB0B /* VTPostRequest.m */,
+				921B17F91C49A89C00B62994 /* Main.storyboard */,
+				921B17FC1C49A89C00B62994 /* Assets.xcassets */,
+				921B17FE1C49A89C00B62994 /* LaunchScreen.storyboard */,
+				921B18011C49A89C00B62994 /* Info.plist */,
+				921B17F01C49A89C00B62994 /* Supporting Files */,
+			);
+			path = Airmouse;
+			sourceTree = "<group>";
+		};
+		921B17F01C49A89C00B62994 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				921B17F11C49A89C00B62994 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		921B17EC1C49A89C00B62994 /* AirmouseiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921B181A1C49A89C00B62994 /* Build configuration list for PBXNativeTarget "AirmouseiOS" */;
+			buildPhases = (
+				921B17E91C49A89C00B62994 /* Sources */,
+				921B17EA1C49A89C00B62994 /* Frameworks */,
+				921B17EB1C49A89C00B62994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirmouseiOS;
+			productName = Airmouse;
+			productReference = 921B17ED1C49A89C00B62994 /* AirmouseiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		921B18051C49A89C00B62994 /* AirmouseiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921B181D1C49A89C00B62994 /* Build configuration list for PBXNativeTarget "AirmouseiOSTests" */;
+			buildPhases = (
+				921B18021C49A89C00B62994 /* Sources */,
+				921B18031C49A89C00B62994 /* Frameworks */,
+				921B18041C49A89C00B62994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				921B18081C49A89C00B62994 /* PBXTargetDependency */,
+			);
+			name = AirmouseiOSTests;
+			productName = AirmouseTests;
+			productReference = 921B18061C49A89C00B62994 /* AirmouseiOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		921B18101C49A89C00B62994 /* AirmouseiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921B18201C49A89C00B62994 /* Build configuration list for PBXNativeTarget "AirmouseiOSUITests" */;
+			buildPhases = (
+				921B180D1C49A89C00B62994 /* Sources */,
+				921B180E1C49A89C00B62994 /* Frameworks */,
+				921B180F1C49A89C00B62994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				921B18131C49A89C00B62994 /* PBXTargetDependency */,
+			);
+			name = AirmouseiOSUITests;
+			productName = AirmouseUITests;
+			productReference = 921B18111C49A89C00B62994 /* AirmouseiOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		921B17E51C49A89C00B62994 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Topper Studios";
+				TargetAttributes = {
+					921B17EC1C49A89C00B62994 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 96NZH6CN6Q;
+					};
+					921B18051C49A89C00B62994 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 921B17EC1C49A89C00B62994;
+					};
+					921B18101C49A89C00B62994 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 921B17EC1C49A89C00B62994;
+					};
+				};
+			};
+			buildConfigurationList = 921B17E81C49A89C00B62994 /* Build configuration list for PBXProject "AirmouseiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 921B17E41C49A89C00B62994;
+			productRefGroup = 921B17EE1C49A89C00B62994 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921B17EC1C49A89C00B62994 /* AirmouseiOS */,
+				921B18051C49A89C00B62994 /* AirmouseiOSTests */,
+				921B18101C49A89C00B62994 /* AirmouseiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		921B17EB1C49A89C00B62994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DC74A81C83550E0001BF0A /* mouse-left.png in Resources */,
+				B6DC74B21C8379760001BF0A /* release-button.png in Resources */,
+				921B18001C49A89C00B62994 /* LaunchScreen.storyboard in Resources */,
+				B6DC74991C8352FB0001BF0A /* background.png in Resources */,
+				921B17FD1C49A89C00B62994 /* Assets.xcassets in Resources */,
+				B6DC74A21C8352FB0001BF0A /* share-button.png in Resources */,
+				921B17FB1C49A89C00B62994 /* Main.storyboard in Resources */,
+				B6DC74AB1C83550E0001BF0A /* mouse-right.png in Resources */,
+				B6DC74AE1C83550E0001BF0A /* mouse-white.png in Resources */,
+				B6DC749C1C8352FB0001BF0A /* calibrate-button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B18041C49A89C00B62994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DC74AC1C83550E0001BF0A /* mouse-right.png in Resources */,
+				B6DC74AF1C83550E0001BF0A /* mouse-white.png in Resources */,
+				B6DC749A1C8352FB0001BF0A /* background.png in Resources */,
+				B6DC749D1C8352FB0001BF0A /* calibrate-button.png in Resources */,
+				B6DC74A91C83550E0001BF0A /* mouse-left.png in Resources */,
+				B6DC74B31C8379760001BF0A /* release-button.png in Resources */,
+				B6DC74A31C8352FB0001BF0A /* share-button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B180F1C49A89C00B62994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6DC74AD1C83550E0001BF0A /* mouse-right.png in Resources */,
+				B6DC74B01C83550E0001BF0A /* mouse-white.png in Resources */,
+				B6DC749B1C8352FB0001BF0A /* background.png in Resources */,
+				B6DC749E1C8352FB0001BF0A /* calibrate-button.png in Resources */,
+				B6DC74AA1C83550E0001BF0A /* mouse-left.png in Resources */,
+				B6DC74B41C8379760001BF0A /* release-button.png in Resources */,
+				B6DC74A41C8352FB0001BF0A /* share-button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		921B17E91C49A89C00B62994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921B17F81C49A89C00B62994 /* ViewController.m in Sources */,
+				921B182B1C49B54F00B62994 /* Quaternion.m in Sources */,
+				921B17F51C49A89C00B62994 /* AppDelegate.m in Sources */,
+				921B182E1C49DFD300B62994 /* BTManager.m in Sources */,
+				921B17F21C49A89C00B62994 /* main.m in Sources */,
+				92F31AC01C83A7BD00B9AB0B /* VTPostRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B18021C49A89C00B62994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B180D1C49A89C00B62994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		921B18081C49A89C00B62994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 921B17EC1C49A89C00B62994 /* AirmouseiOS */;
+			targetProxy = 921B18071C49A89C00B62994 /* PBXContainerItemProxy */;
+		};
+		921B18131C49A89C00B62994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 921B17EC1C49A89C00B62994 /* AirmouseiOS */;
+			targetProxy = 921B18121C49A89C00B62994 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		921B17F91C49A89C00B62994 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921B17FA1C49A89C00B62994 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		921B17FE1C49A89C00B62994 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921B17FF1C49A89C00B62994 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		921B18181C49A89C00B62994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		921B18191C49A89C00B62994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		921B181B1C49A89C00B62994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Airmouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topperstudios.Airmouse;
+				PRODUCT_NAME = AirmouseiOS;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		921B181C1C49A89C00B62994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Airmouse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topperstudios.Airmouse;
+				PRODUCT_NAME = AirmouseiOS;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		921B181E1C49A89C00B62994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AirmouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topperstudios.AirmouseTests;
+				PRODUCT_NAME = AirmouseiOS;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirmouseiOS.app/AirmouseiOS";
+			};
+			name = Debug;
+		};
+		921B181F1C49A89C00B62994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AirmouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topperstudios.AirmouseTests;
+				PRODUCT_NAME = AirmouseiOS;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirmouseiOS.app/AirmouseiOS";
+			};
+			name = Release;
+		};
+		921B18211C49A89C00B62994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AirmouseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topperstudios.AirmouseUITests;
+				PRODUCT_NAME = AirmouseiOS;
+				TEST_TARGET_NAME = Airmouse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		921B18221C49A89C00B62994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AirmouseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topperstudios.AirmouseUITests;
+				PRODUCT_NAME = AirmouseiOS;
+				TEST_TARGET_NAME = Airmouse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		921B17E81C49A89C00B62994 /* Build configuration list for PBXProject "AirmouseiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921B18181C49A89C00B62994 /* Debug */,
+				921B18191C49A89C00B62994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921B181A1C49A89C00B62994 /* Build configuration list for PBXNativeTarget "AirmouseiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921B181B1C49A89C00B62994 /* Debug */,
+				921B181C1C49A89C00B62994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921B181D1C49A89C00B62994 /* Build configuration list for PBXNativeTarget "AirmouseiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921B181E1C49A89C00B62994 /* Debug */,
+				921B181F1C49A89C00B62994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921B18201C49A89C00B62994 /* Build configuration list for PBXNativeTarget "AirmouseiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921B18211C49A89C00B62994 /* Debug */,
+				921B18221C49A89C00B62994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 921B17E51C49A89C00B62994 /* Project object */;
+}
